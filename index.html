@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Baccarat</title>
+
+</head>
+
+<body>
+
+
+  <div class="main">
+
+   
+
+
+
+
+    <!-- left links -->
+
+
+
+    <div class="leftlinks">
+
+      <div>
+
+      <ul>
+
+        <li class="hideall" > <a href="#">  <span> <img src="images/icon-close.svg" width="15" alt=""> </span>  Hide All </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-home.svg" width="15" alt=""> </span>  Home </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-shield.svg" width="15" alt=""> </span>  Prov Fair </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-dollar.svg" width="15" alt=""> </span>  Deposit </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-award.svg" width="15" alt=""> </span>  Recent Winners </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-joystick.svg" width="15" alt=""> </span>  Recent Games </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-recent-gameplay.svg" width="15" alt=""> </span>  Recent Gameplays </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-rules.svg" width="15" alt=""> </span>  Rules </a> </li>
+        <li class="" > <a href="#">  <span> <img src="images/icon-support.svg" width="15" alt=""> </span>  Support </a> </li>
+
+      </ul>
+
+    </div>
+
+
+    </div>
+
+
+    <!-- end left links -->
+
+
+
+
+
+
+    <!-- game stage -->
+
+    <div id="game-stage">
+
+      <div class="holder">
+
+
+        <!-- fullscreen button -->
+        <div class="fullscreen" onclick="toggleFullScreen(document.body);"> 
+        <img src="images/fullscreen.svg" width="100%" alt="">
+        </div>
+        <!-- end fullscreen button -->
+
+
+        <!-- close button -->
+        <div class="closebutton">
+          <img src="images/close.svg" width="100%" alt="">
+        </div>
+        <!-- end close button -->
+
+
+        <!-- stack holder -->
+        <div class="stackholder">
+          
+            <img src="images/stack.png" width="100%" height="auto" alt=""> 
+      
+
+       </div>
+
+
+
+       
+       <div class="topcoinsholder">
+
+
+            
+
+          <div class="coinsholdergrid">
+
+
+            <div> <img src="images/topview-coin1.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin1.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin3.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin1.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin5.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin1.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin2.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin1.svg" width="100%" height="100%"  alt=""> </div>
+            <div> <img src="images/topview-coin4.svg" width="100%" height="100%"  alt=""> </div>
+            
+
+
+            </div>
+
+            
+
+       
+
+      </div>
+
+
+
+        <!-- end stack holder -->
+
+
+        <!-- deal button -->
+        <div class="deal-button">
+          <img src="images/deal-button.png" width="100%" alt="">
+        </div>
+        <!-- end deal button -->
+
+
+        <!-- rebet button -->
+        <div class="rebet-button">
+          <img src="images/rebet-button.png" width="100%" alt="">
+        </div>
+        <!-- end rebet button -->
+
+
+        <!-- flipped-card -->
+        <div class="flipped-card">
+          <img src="images/flipped-card.png" width="100%" alt="">
+        </div>
+        <!-- end flipped-card-->
+
+
+        <!-- card holder -->
+        <div class="card-holder">
+          <img src="images/card-holder.png" width="100%" alt="">
+        </div>
+        <!-- end card holder -->
+
+
+        <!-- scoreboard  -->
+
+        <div class="scoreboard">
+
+          <div class="scoregrid" id="widget">
+
+            <div>P</div>
+            <div>B</div>
+            <div>0</div>
+            <div>9</div>
+            <div>0</div>
+            <div>6</div>
+
+          </div>
+
+        </div>
+        
+        <!-- end scoreboard -->
+
+        <!-- bet limit -->
+
+        <div class="bet-limit"> 
+        
+          <h4>BET LIMIT</h4>
+
+          <p>
+             <b> Min : </b> 1.00<br>
+             <b>  Max : </b> 1000.00<br>
+             <b>  Rake : </b> 0% <br>
+          </p>
+                    
+        </div>
+        
+        <!-- end bet limit -->
+
+
+        <!-- coins -->
+        
+        <div class="coins">
+        <span class="beforespan"> < </span>
+        <div class="scrollcoins">
+        <div class="coinscontainer">
+        <div class="coin-001" ><img src="images/coin-001.png" width="100%" alt=""></div>
+        <div class="coin-005" ><img src="images/coin-005.png" width="100%" alt=""></div>
+        <div class="coin-010" ><img src="images/coin-010.png" width="100%" alt=""></div>
+        <div class="coin-025" ><img src="images/coin-025.png" width="100%" alt=""></div>
+        <div class="coin-1" ><img src="images/coin-1.png"   width="100%" alt=""></div>
+        <div class="coin-5" ><img src="images/coin-5.png"   width="100%" alt=""></div>
+        <div class="coin-10" ><img src="images/coin-10.png"  width="100%" alt=""></div>
+        <div class="coin-25" ><img src="images/coin-25.png"  width="100%" alt=""></div>
+        <div class="coin-100" ><img src="images/coin-100.png" width="100%" alt=""></div>
+        <div class="coin-500" ><img src="images/coin-500.png" width="100%" alt=""></div>
+        </div>
+      </div>
+
+      <span class="afterspan"> > </span>
+
+      </div>
+
+        <!-- end coins -->
+
+
+
+        <!-- drag coins -->
+
+
+        <div class="playercircle"> <img src="images/coin-25.png" width="100%" alt=""> </div>
+        <div class="tiecircle"> </div>
+        <div class="bankercircle"> </div>
+
+
+
+
+
+
+          
+
+
+        <!-- end drag coins -->
+
+
+
+
+
+
+        <!-- card flip -->
+
+
+        <div class="card-flip">
+
+
+            <div id="mainWrap">
+
+                <div class="cardCont card1">
+                  <div class="cardBack playcardBack">   <img src="images/heart-9.png" width="100%" alt="">  </div>
+                  <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+                </div>
+
+
+                <div class="cardCont card2">
+                    <div class="cardBack playcardBack">   <img src="images/pikes-6.png" width="100%" alt="">  </div>
+                    <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+                </div>
+
+
+                <div class="cardCont card5">
+                    <div class="cardBack playcardBack">   <img src="images/clover-king.png" width="100%" alt="">  </div>
+                    <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+                </div>
+
+
+                <div class="cardCont card3">
+                      <div class="cardBack playcardBack">   <img src="images/tiles-8.png" width="100%" alt="">  </div>
+                      <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+                </div>
+
+
+                <div class="cardCont card4">
+                    <div class="cardBack playcardBack">   <img src="images/clover-4.png" width="100%" alt="">  </div>
+                    <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+              </div>
+       
+
+
+              <div class="cardCont card6">
+                  <div class="cardBack playcardBack">   <img src="images/heart-queen.png" width="100%" alt="">  </div>
+                  <div class="cardFront playcardFront"> <img src="images/card-front.png" width="100%" alt=""></div>
+              </div>
+
+
+
+          </div>
+
+        </div>
+
+        <!-- end card flip -->
+
+
+
+
+        <!-- player points -->
+        <div class="player-points"> 
+        5
+        </div>
+        <!-- end player points -->
+        
+        <!-- banker points -->
+        <div class="banker-points">
+          2
+        </div>
+        <!-- end banker points -->
+
+
+
+        <!-- winner banner -->
+        <div class="winner-banner">
+
+         <div> 
+        <h2> Player Win </h2>   
+        <h4>10 Points</h4>
+        </div>
+
+        </div>
+        <!-- end winner banner -->
+
+
+
+        <img src="images/blank.png" width="100%" height="auto" alt="">
+
+
+
+        <div class="settings">
+
+            <span> <a href=""><img src="images/icon-setting.svg" width="15" alt=""></a> </span>
+            <span> <a href=""><img src="images/icon-music.svg" width="15" alt=""></a> </span>
+            <span> <b> Credit : </b> 4988.50 </span>
+            <span> <b> Win : </b> 10.00 </span>
+            <span> <b> Total Bet : </b> 10.00 </span>
+            <span> <b> 12:00 </span>
+      
+          </div>
+
+
+
+
+      </div>
+
+    </div>
+
+    <!-- end game stage -->
+
+
+
+    <!-- settings and score display -->
+
+   
+
+    <!-- end settings and score display -->
+
+  </div>
+
+
+
+
+  <!-- drop coins -->
+
+
+  <!-- 
+  <div id="no-drop" class="drag-drop"> #no-drop </div>
+
+  <div id="yes-drop" class="drag-drop"> #yes-drop </div>
+  
+  <div id="outer-dropzone" class="dropzone">
+    #outer-dropzone
+    <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
+   </div>
+  
+   -->
+   <!-- end drop coins -->
+  
+
+  <!-- Optional JavaScript -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
+
+<!doctype html>
