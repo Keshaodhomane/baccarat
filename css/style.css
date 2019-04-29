@@ -1,0 +1,572 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    font-family: "roboto Condensed";
+    
+}
+
+
+p
+{
+    font-size: 0.8em;
+}
+
+
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat center top;
+    background-size: 100% auto;
+}
+
+
+
+.holder
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+.stackholder
+{
+    width: 23.8%;
+    height: 9.8%;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 11.9%);
+    top:2.2%;
+}
+
+
+.deal-button
+{
+    width: 13.5%;
+    height: 19.5%;
+    left: 82.8%;
+    top:24.9%;
+    position: absolute;
+    z-index: 5;
+    cursor:pointer;
+    
+}
+
+
+.rebet-button
+{
+    width: 13.5%;
+    height: 19.5%;
+    left: 82.8%;
+    top:50%;
+    position: absolute;
+    z-index: 5;
+    cursor:pointer;
+}
+
+
+.card-holder
+{
+    width: 15.9%;
+    height: 25.1%;
+    left: 72.1%;
+    top: 8.8%;
+    position: absolute;
+    z-index: 4;  
+
+}
+
+
+.flipped-card
+{
+    width: 7.8%;
+    height: 14.3%;
+    left: 73.1%;
+    top: 18.1%;
+    position: absolute;
+    z-index: 6;
+}
+
+.scoreboard
+{
+    background: #1C1C1C;
+    border:5px solid #f9dc7f;
+    width: 6.8%;
+    height: 21.6%;
+    left: 70%;
+    top: 46.4%;
+    position: absolute;
+    z-index: 8;
+    transform: rotate(20deg);
+    
+}
+
+
+
+.scoregrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+
+.scoregrid > div
+ {
+     color: #fff;
+     font-weight: bold;
+     text-align: center;
+ }
+
+
+
+
+ #img-out canvas
+ {
+   width: 100%;
+ }
+
+
+
+
+ .bet-limit
+ {
+     background: #1C1C1C;
+     width: 8.3%;
+     height: 11.9%;
+     position: absolute;
+     top: 45.4%;
+     left: 13.3%;
+     text-align: center;
+     color: #fff;
+     border-radius: 5%;
+ }
+
+.bet-limit p, .bet-limit h4
+{
+    margin:0;
+    
+}
+
+
+.bet-limit h4 
+{
+    padding-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .card1
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 33.9%;
+  top: 25.1%;
+  z-index: 12;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+
+.card2
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 37.8%;
+  top: 25.1%;
+  z-index: 13;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+.card3
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 51.1%;
+  top: 25.1%;
+  z-index: 14;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+
+
+.card4
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 55.1%;
+  top: 25.1%;
+  z-index: 20;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+
+.card5
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 41.0%;
+  top: 25.1%;
+  z-index: 16;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+
+
+.card6
+{
+  width:7.1%;
+  height:17.6%;
+  position:absolute;
+  z-index: 100;
+  left: 58.1%;
+  top: 25.1%;
+  z-index: 20;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius: 5%;
+}
+
+
+
+
+
+
+
+.cardFront, .cardBack
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+ 
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+
+
+
+.player-points, .banker-points
+{
+    width: 3.7%;
+    height: 6.6%;
+    position: absolute;
+    z-index: 112;
+    border-radius: 50%;
+    border:2px solid #fff;
+    color: #fff;
+    font-family: "roboto condensed";
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+    transform: scale(0.5);
+    opacity: 0;
+
+}
+
+
+.player-points 
+{
+    left: 25.8%;
+    top: 28.0%;
+    background: rgba(0,0,0,0.5);
+
+    
+}
+
+
+
+.banker-points 
+{
+    left: 67.8%;
+    top: 28.0%;
+    background: rgba(255,199,58,0.5);
+}
+
+
+.winner-banner
+{
+    width:27.3%;
+    height:30.3%;
+    left: 36.3%;
+    top: 28.8%;
+    position: absolute;
+    z-index: 200;
+    background: url(../images/banner.png) no-repeat center center;
+    background-size: 100%;
+    display: grid;
+    text-align:center;
+    color: #fff;
+    transform: scale(0.2);
+    opacity:0;
+}
+
+.winner-banner  > div 
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.fullscreen, .closebutton
+{
+    width: 4.7%;
+    height: 7.8%;
+    position: absolute;
+    z-index: 300;
+
+}
+
+.fullscreen 
+{
+    left:87.5%;
+    top:3.1%;
+    cursor: pointer;
+}
+
+
+.closebutton 
+{
+    left:93.3%;
+    top:3.1%;
+    cursor: pointer;
+}
+
+
+
+.coins
+{
+    width: 30%;
+    height: 9.4%;
+    position: absolute;
+    left: calc(50% - 15%);
+    top: 72.4%;
+    
+}
+
+.scrollcoins
+{
+    overflow-x:hidden;
+}
+
+.coins > div > .coinscontainer
+{
+ display: grid;
+ grid-template-columns: repeat(10, 55px);
+ grid-gap: 5px;
+ 
+  
+}
+
+
+.beforespan
+{
+    
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    z-index: 500;
+    
+}
+
+.afterspan
+{
+    
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    z-index: 500;
+}
+
+
+.playercircle
+{
+    width: 4.7%;
+    height: 8.3%;
+    background:rgba(0,0,0,0.0);
+    position: absolute;
+    top: 55.7%;
+    left: 33.5%;
+    border-radius: 50%;
+    
+}
+
+.tiecircle
+{
+    width: 4.7%;
+    height: 8.3%;
+    background:rgba(0,0,0,0.0);
+    position: absolute;
+    border-radius: 50%;
+    top: 55.7%;
+    left: 61.8%;
+    
+}
+
+
+.bankercircle
+{
+    width: 4.7%;
+    height: 8.3%;
+    background:rgba(0,0,0,0.0);
+    position: absolute;
+    top: 49.2%;
+    left: 47.6%;
+    border-radius: 50%;
+}
+
+
+.leftlinks
+{
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+    z-index: 999;
+
+
+}
+
+
+
+.leftlinks ul li, .leftlinks ul 
+{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.leftlinks > div > ul > li 
+{
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.3);
+    transition: all, .5s;
+    cursor: pointer;
+}
+
+.leftlinks ul li a span
+{
+    display: block;
+    text-align: center;
+}
+
+.leftlinks ul li a
+{
+    color: #fff;
+    font-family: "roboto condensed";
+    text-decoration: none;
+    font-size: 0.8em;    
+}
+
+
+.leftlinks ul li:hover
+{
+    background-color:#851212;
+}
+
+.settings
+{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: calc(90%);
+    width: 100%;
+
+}
+
+.settings > span
+{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.topcoinsholder
+{
+    width: 23.8%;
+    height: 9.8%;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 11.9%);
+    top:2.2%;
+
+}
+
+.coinsholdergrid
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    top: 0;
+    left: 0;
+    grid-gap: 5px;
+    padding: 0px 5px;
+    
+}
+
+.coinsholdergrid > div
+{
+    text-align: center;
+}
+
+.coinsholdergrid > div img
+{
+    margin: 0;
+    padding: 0;
+}
